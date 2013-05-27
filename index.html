@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ludum Dare 23 - Theme: Tiny World</title>
+		<script type="text/javascript" src="core/Game.js"></script>
+		<script type="text/javascript" src="map/MapGenerator.js"></script>
+		<script type="text/javascript" src="map/Tile.js"></script>
+		<script type="text/javascript" src="core/InputManager.js"></script>
+		<script type="text/javascript" src="entity/Player.js"></script>
+		<script type="text/javascript" src="core/GlobalUtil.js"></script>
+		<script type="text/javascript" src="core/CollisionDetector.js"></script>
+		<script type="text/javascript" src="core/Coord.js"></script>
+		<script type="text/javascript" src="entity/Citizen.js"></script>
+		<script type="text/javascript" src="core/EntityManager.js"></script>
+		<script type="text/javascript" src="core/FontFactory.js"></script>
+		<style type="text/css">
+			canvas {
+				image-rendering: optimizeSpeed;
+				image-rendering: -moz-crisp-edges;
+				image-rendering: -webkit-optimize-contrast;
+				image-rendering: optimize-contrast;
+				-ms-interpolation-mode: nearest-neighbor;
+			}
+
+		</style>
+	</head>
+	<body style="background-color:#ccc;text-align:center;">
+			<canvas id="canvas" width="800", height="600"></canvas>
+			<p style="font-size:10pt;">
+				<b><u>70 seconds left</u></b><br>
+				<b><a href="http://http://www.ludumdare.com/">made for Ludum Dare 23 - Theme: Tiny World</a> - <a href="source.zip">download sourcecode</a></b><br>
+				<b>[arrow]</b>-keys to move
+				<br>
+				<b>[x]</b> to spit fire!
+				<br>
+				<b>[m]</b> to mute the music
+				<br>
+				The goal: Destroy that city!
+				<br>
+				<a href="https://twitter.com/#!/emveyh">twitter: @emveyh</a>
+			</p>
+			<script type="text/javascript">
+				new Game().init();
+
+			</script>
+	</body>
+</html>
